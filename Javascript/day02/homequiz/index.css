@@ -1,0 +1,13 @@
+.cafe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: center;
+}
