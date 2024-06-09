@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="time.js"></script>
+    <script src="weather.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+    main {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("https://cdn.pixabay.com/photo/2022/06/04/18/15/grass-7242537_960_720.jpg");
+      background-size: cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .jumbotron {
+      width: 30%;
+      height: 30%;
+      background-color: white;
+
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .timer {
+      font-size: 30px;
+    }
+
+    .weather_info {
+      font-size: 24px;
+    }
+  </style>
+  <body>
+    <main>
+      <section class="jumbotron">
+        <h2 class="timer">로딩중</h2>
+        <h4 class="weather_info">버튼 선택</h4>
+        <h4 class="temp_info"></h4>
+        <div class="button_area">
+          <button class="korea button">korea</button>
+          <button class="japan button">japan</button>
+          <button class="china button">china</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

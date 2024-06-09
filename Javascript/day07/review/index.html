@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type='module' src="index.js" defer></script>
+  </head>
+  <style>
+    .table{
+        width: 100vw;
+        max-width: 1400px;
+        margin: 0 auto;
+        border: 1px solid #dbdbdb;
+        padding: 20px 50px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .table_data{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .table_data > div{
+        flex: 1;
+        text-align: start;
+    }
+
+  </style>
+  <body>
+    <div class="search">
+        <input class="searchInput" type="text" />
+        <button class="btn">검색</button>
+    </div>
+    <section class="table">
+        <div class="table_data">
+            <div class="id">ID</div>
+            <div class="fullName">FullName</div>
+            <div class="jobTitle">JobTitle</div>
+            <div class="race">Race</div>
+            <div class="university">University</div>
+        </div>
+    </section>
+</html>
